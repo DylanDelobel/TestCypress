@@ -11,9 +11,7 @@ describe("Login into popcarte", () => {
         cy.get("#onetrust-accept-btn-handler").click()
 
         cy.get('#ulogin').type('dylan@pop.com')
-
         cy.get('#loginForm-submit-button').click()
-
         cy.contains("Bonjour").should("Bonjour, Yanik")
     })
 })
